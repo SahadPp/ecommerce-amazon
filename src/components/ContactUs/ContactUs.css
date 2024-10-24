@@ -1,0 +1,40 @@
+.contactus {
+  background-image: url(../../../public/lovepik-contact-us-background-image_500584282.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.contact-content {
+  height: 400px;
+  background-color: #3a4d61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.contact-item {
+  background-color: #e7e1e1;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 420px;
+  height: 350px;
+  transition: background-color 1s ease, box-shadow 0.3s ease;
+}
+.contact-item:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 5px #000000;
+}
+.contact-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.contact-item i {
+  color: rgb(3, 94, 0);
+  font-size: 18px;
+}
