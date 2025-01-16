@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "../components/Home/Home";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
@@ -18,7 +18,7 @@ function RoutesLayout() {
       <Router>
         <Header />
 
-        <Switch>
+        <Routes>
           <Route path={home} element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/cart" element={<Cart />} />
@@ -26,7 +26,7 @@ function RoutesLayout() {
           <Route path={products} element={<Products />} />
           <Route path={aboutus} element={<AboutUs />} />
           <Route path={contactus} element={<ContactUs />} />
-        </Switch>
+        </Routes>
         <Footer />
       </Router>
     </>
